@@ -1,6 +1,6 @@
 package project;
 
-public class demo10 {
+public class q10 {
 
 		public static void main(String[] args) {
 		    long n=3,s=2;
