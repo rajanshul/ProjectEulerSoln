@@ -1,28 +1,20 @@
 package project;
 
 public class q9 {
-
+		
 	public static void main(String[] args) {
-		tripleproduct(1000);
-	}
-		public static void tripleproduct(int find_sum){
-			int a,b,c;
-			for(a=0;a<find_sum;a++){
-				for(b=0;b<find_sum;b++){
-					for(c=0;c<find_sum;c++){
-						if(square(a)+square(b)==square(c)&& a+b+c == find_sum){
-							System.out.println(a+"  "+b+"  "+c+"  "+a*b*c);
-						}
-					}
+		int a=0,b=0,c=0,ml=1;
+		for(a=1;a<1000/3;a++){
+			for(b=a+1;b<1000/2;b++){
+				c=1000-a-b;
+				if(a*a+b*b==c*c){
+					ml=a*b*c;
+					System.out.println(""+a+"*"+b+"*"+c+"="+ml);
 				}
 			}
 		}
-		public static int square(int x){
-			return x*x;
-		}
-		}
-		
 
-	
+	}
+}
 
 
