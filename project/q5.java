@@ -6,7 +6,7 @@ public static  int p5(){
 	int i=2520;
 	boolean found=false;
 	while (!found){
-		i=i+2520;
+		i=i+20;
 		boolean isd=true;
 		for(int j=11;j<=20;j++){
 			if(i%j!=0){
