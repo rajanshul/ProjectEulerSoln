@@ -15,7 +15,7 @@ public class q10 {
 		  }
 public static boolean isprime(long n){
 	int c=0;
-	for(int i=1;i<=(int)Math.sqrt(n);i+=2)
+	for(int i=2;i<=(int)Math.sqrt(n);i++)
 		if(n%i==0)
 			c++;
 	if(c>1)
