@@ -2,22 +2,38 @@ package project;
 
 public class q_7 {
 
-	public static void main(String[] args) {
-		int primeno=0;
-		int count=0;
-		for( int num=2;;num++){
-			boolean pn=true;		
-			for (int j=2;j<num;j++){
-			if(num%j==0){
-				pn=false;
-			break;
-			}}
-			if(pn){
-				primeno=num;
-			count++;}
-			if(count==10001){
-				break;
-			}
-			}
-System.out.println(primeno);
-	}}
+	public static boolean prime(long n)
+{
+	boolean f = true;
+	if(n%2==0)
+		return false;
+	for(long i=3;i*i<=n;i=i+2)
+	{
+		if(n%i==0)
+			return false;
+	}
+	return f;
+}
+public static  long pro(long l)
+{
+	long c = 0;
+	long res = 0;
+	
+	for(long x= 1;c<= l;x++)
+	{
+		if(prime(x))
+		{
+			res = x;
+			c++;
+			
+		}
+	}
+	return res;
+}
+public static void main(String[] args) {
+	
+	long l =10001;
+	System.out.println(pro(l-1));
+	
+        
+}}     
