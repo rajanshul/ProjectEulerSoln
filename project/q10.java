@@ -14,15 +14,16 @@ public static void main(String[] args){
 	static boolean prime(int n)
 	{
 		boolean a=true;
-		if(n%2==0)
-			return false;
-		for(long i=3;i*i<=n;i=i+2)
+		for(long i=3;i<=Math.sqrt(n);i=i+2)
 		{
 			if(n%i==0)
-				return false;
+			{
+				a=false;
+				break;
+		        }
 		}
 		return a;
-	}
+	
 }
 
 
