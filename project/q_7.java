@@ -19,7 +19,7 @@ public static  long pro(long l)
 	long c = 0;
 	long res = 0;
 	
-	for(long x= 1;c<= l;x++)
+	for(long x= 1;c<= l;x+=2)
 	{
 		if(prime(x))
 		{
