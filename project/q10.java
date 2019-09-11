@@ -5,7 +5,7 @@ public static void main(String[] args){
 		Integer sum=new Integer(2);
 		boolean isprime=true;
 		for(int i=3;i<2000000;i+=2){
-		for(int j=1;j<Math.sqrt((double)i);j+=2){
+		for(int j=3;j<Math.sqrt((double)i);j+=2){
 			if(i%j==0){
 				isprime=false;
 				break;
